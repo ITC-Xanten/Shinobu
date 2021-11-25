@@ -1,0 +1,27 @@
+{
+  "name": "shinobu",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "git@github.com:ITC-Xanten/Shinobu.git",
+  "author": "ITC-Xanten",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "dev": "set ENV=dev &&ts-node src/index.ts",
+    "start": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.10",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@discordx/importer": "^1.1.2",
+    "discord.js": "^13.3.1",
+    "discordx": "^9.0.1",
+    "distube": "^3.0.3",
+    "dotenv": "^10.0.0",
+    "ffmpeg-static": "^4.4.0",
+    "libsodium-wrappers": "^0.7.9",
+    "reflect-metadata": "^0.1.13"
+  }
+}
