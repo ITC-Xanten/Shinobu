@@ -5,6 +5,6 @@ import { CommandInteraction } from 'discord.js';
 abstract class Ping {
   @Slash('ping')
   private async ping(interaction: CommandInteraction) {
-    await interaction.reply('Pong!');
+    await interaction.reply("Pong!");
   }
 }
