@@ -42,5 +42,4 @@ jobs:
           REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           reporter: github-check
-          eslint_flags: 'src/'
           fail_on_error: true
