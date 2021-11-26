@@ -8,8 +8,7 @@ on:
 
 jobs:
   #######################################################
-  # Build Vue:
-  # Builds the Vue.JS app
+  # Run eslint on all files in src directory
   ########################################################
   run-eslint:
     runs-on: ubuntu-latest
