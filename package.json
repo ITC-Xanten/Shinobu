@@ -6,8 +6,8 @@
   "author": "ITC-Xanten",
   "license": "GPL-3.0-or-later",
   "scripts": {
-    "dev": "set ENV=dev &&ts-node src/index.ts",
-    "start": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/node": "^16.11.10",
