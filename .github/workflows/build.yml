@@ -106,9 +106,9 @@ jobs:
         if: github.event_name == 'pull_request'
         with:
           script: |
-            github.rest.issues.createComment({
+            github.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'An automatic build of the image has been created: ${{ env.REGISTRY }}/${{ steps.meta.outputs.tags }}:${{ steps.meta.outputs.labels }}'
+              body: 'A new build is available: ${{ env.REGISTRY }}/${{ steps.meta.outputs.tags }}:pr-${{ context.issue.number }}'
             })
