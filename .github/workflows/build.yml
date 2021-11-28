@@ -116,5 +116,5 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'A new build is available: ${{ env.REGISTRY }}/${{ steps.meta.outputs.tags }}:pr-${{ steps.findPr.outputs.pr }}'
+              body: 'A new build is available: `${{ env.REGISTRY }}/${{ steps.meta.outputs.tags }}`'
             })
